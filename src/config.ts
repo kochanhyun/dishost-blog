@@ -8,7 +8,7 @@ import { LinkPreset } from './types/config'
 
 export const siteConfig: SiteConfig = {
   title: 'Dishost',
-  subtitle: 'A development blog of Dishost',
+  subtitle: "개발 블로그 : 간편하고 안정적인 디스코드 봇 호스팅 서비스",
   lang: 'ko',         // 'en', 'zh_CN', 'zh_TW', 'ja', 'ko', 'es', 'th'
   themeColor: {
     hue: 250,         // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
@@ -40,8 +40,12 @@ export const siteConfig: SiteConfig = {
 export const navBarConfig: NavBarConfig = {
   links: [
     LinkPreset.Home,
-    LinkPreset.Archive,
     LinkPreset.About,
+    LinkPreset.Archive,
+    {
+      name: '가이드',
+      url: '/posts/guide/',     // This URL should point to your guide page
+    },
     {
       name: 'Dishost.kr',
       url: 'https://dishost.kr',     // Internal links should not include the base path, as it is automatically added
@@ -53,7 +57,7 @@ export const navBarConfig: NavBarConfig = {
 export const profileConfig: ProfileConfig = {
   avatar: 'assets/images/avatar.png',  // Relative to the /src directory. Relative to the /public directory if it starts with '/'
   name: 'Dishost',
-  bio: '디스코드 봇 호스팅 서비스를 운영하고 있습니다.',
+  bio: '간편하고 안정적인 디스코드 봇 호스팅 서비스, 디스호스트를 운영하고 있습니다.',
   links: [
     {
       name: 'Discord',
